@@ -6,10 +6,11 @@
   ],
   "scripts": {
     "dev:backend": "yarn workspace backend dev",
-    "dev:frontend": "yarn workspace frontend dev",
+    "dev:frontend": "yarn workspace frontend start",
     "dev": "concurrently \"yarn dev:backend\" \"yarn dev:frontend\""
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
